@@ -545,7 +545,7 @@ margin-right: auto;
     color: var(--primary-white-color);
     fill: var(--primary-white-color);
     background-color: #2196F3;
-    border-color: #2196F3;
+    border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
