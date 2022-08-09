@@ -662,8 +662,12 @@
         <!-- підписка у футері -->
         <div class="footer-subscription container">
           <h2 class="footer-subscription-title">Підпишіться на розсилку</h2>
-          <form class="footer-form" name="footer-form" autocomplete="off">
-            <input class="footer-subscription-input" name="subscription" placeholder="E-mail" />
+          <form class="footer-sub-form" name="footer-form" autocomplete="off">
+            <input
+              class="footer-subscription-input"
+              name="subscription"
+              placeholder="E-mail"
+            />
             <button class="footer-subscription-button">
               Підписатися
               <svg class="footer-btn-icon" width="24" height="24">
@@ -690,7 +694,7 @@
           >
 
           <div class="register-form-group" role="group">
-            <label for="modal-form-group" class="register-form-wrap">
+            <label class="register-form-wrap">
               <span class="register-form-label">Ім'я</span>
               <input class="register-form-input" type="text" name="user-name" />
               <svg class="modal-form-icon" width="18" height="18">
@@ -698,7 +702,7 @@
               </svg>
             </label>
 
-            <label for="modal-form-group" class="register-form-wrap">
+            <label class="register-form-wrap">
               <span class="register-form-label">Телефон</span>
               <input class="register-form-input" type="tel" name="user-phone" />
               <svg class="modal-form-icon" width="18" height="18">
@@ -706,7 +710,7 @@
               </svg>
             </label>
 
-            <label for="modal-form-group" class="register-form-wrap">
+            <label class="register-form-wrap">
               <span class="register-form-label">Пошта</span>
               <input
                 class="register-form-input"
@@ -718,7 +722,7 @@
               </svg>
             </label>
 
-            <label for="modal-form-group" class="register-form-wrap">
+            <label class="register-form-wrap">
               <span class="register-form-label">Коментар</span>
               <textarea
                 class="register-form-message"
@@ -735,22 +739,29 @@
                 class="register-checkbox visually-hidden"
                 type="checkbox"
                 name="agreement"
-                
               />
-              <svg class="form-checkbox-icon" >
-                <use class="form-modal-checkbox-uncheck" href="./images/icons.svg#check-square"></use>
-                <use class="form-modal-checkbox-check" href="./images/icons.svg#icon-check"></use>
+              <svg class="form-checkbox-icon">
+                <use
+                  class="form-modal-checkbox-uncheck"
+                  href="./images/icons.svg#check-square"
+                ></use>
+                <use
+                  class="form-modal-checkbox-check"
+                  href="./images/icons.svg#icon-check"
+                ></use>
               </svg>
-            </label>
-              <span class="form-agreement-text">Погоджуюся з розсилкою та приймаю
+
+              <span class="form-agreement-text"
+                >Погоджуюся з розсилкою та приймаю
                 <a
                   class="form-agreement-link"
                   href="./"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Умови договору</a>
+                  >Умови договору</a
+                >
               </span>
-              
+            </label>
           </div>
 
           <div class="modal-form-btn">

@@ -475,6 +475,12 @@ margin-right: auto;
     margin-bottom: 9px;
 }
 
+/* footer-right */
+
+.footer-right{
+    margin-right: 93px;
+}
+
 .footer-join{
     color: var(--secondary-text-color);
     margin-bottom: 20px;
@@ -489,7 +495,10 @@ margin-right: auto;
 }
 
 .footer-subscription{
+    display: block;
     width: 570px;
+    margin-right: 0;
+    padding: 0;
 }
 
 .footer-subscription-title{
@@ -503,11 +512,15 @@ margin-right: auto;
     color: var(--primary-white-color);
 }
 
-.footer-form{
+.footer-sub-form{
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .footer-subscription-input{
+    display: flex;
+    align-items: center;
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -526,11 +539,12 @@ margin-right: auto;
 .footer-subscription-input::placeholder{
     font-size: 16px;
     line-height: 1.25;
-        color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-subscription-button{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 
@@ -541,8 +555,7 @@ margin-right: auto;
     width: 200px;
     height: 50px;
 
-    padding: 10px;
-    padding-left: 28px;
+    padding: 10px 28px;
 
     color: var(--primary-white-color);
     fill: var(--primary-white-color);
@@ -553,7 +566,7 @@ margin-right: auto;
     cursor: pointer;
     }
 
-/* стилі для portfolio.html */
+    /* стилі для portfolio.html */
 
 
 /* фільтр */
@@ -766,6 +779,11 @@ margin-right: auto;
     border: 1px solid #0000001A;
 }
 
+.modal-btn:hover,
+.modal-btn:focus{
+    fill:#2196F3;;
+}
+
 /* modal contacts form */
 .register-form{
     text-align: center;
@@ -823,7 +841,7 @@ margin-right: auto;
 .register-form-label{
     display: block;
     position: relative;
-    padding: 4px;
+    padding-bottom: 4px;
 
     text-align: left;
     font-size: 12px;
@@ -837,6 +855,16 @@ margin-right: auto;
     bottom: 11px;
     left: 12px;
     fill: #212121;
+}
+
+.register-form-wrap{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.register-form-wrap:last-child {
+    margin-bottom: 0;
 }
 
 .register-form-message{
@@ -856,9 +884,10 @@ margin-right: auto;
 }
 
 .register-form-agreement {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 
@@ -866,13 +895,14 @@ margin-right: auto;
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
+    margin-right: 8px;
 }
+
 .form-checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-
 }
 
 .form-agreement-text{
@@ -898,6 +928,12 @@ margin-right: auto;
     opacity: 0;
     transition: opacity var(--trans);
 }
+
+.register-checkbox:focus +  .form-checkbox-icon .form-modal-checkbox-uncheck{
+    fill: var(--accent-color);
+    transition: fill var(--trans);
+}
+
 .register-checkbox:checked + .form-checkbox-icon .form-modal-checkbox-check {
     opacity: 1;
     transition: opacity var(--trans);
