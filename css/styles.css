@@ -777,17 +777,18 @@ margin-right: auto;
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid #0000001A;
+
+    transition: fill var(--trans);
 }
 
 .modal-btn:hover,
 .modal-btn:focus{
-    fill:#2196F3;;
+    fill:#2196F3;
 }
 
 /* modal contacts form */
 .register-form{
     text-align: center;
-
 }
 
 .form-title{
@@ -818,7 +819,6 @@ margin-right: auto;
 .register-form-input,
 .register-form-message{
     width: 100%;
-    height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     background-color: var(--primary-white-color);
   
